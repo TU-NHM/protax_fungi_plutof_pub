@@ -45,7 +45,7 @@ EOSC-Nordic service preparations (PROTAX-fungi)
 
 **NB! The script expects input files in FASTA format, named as source_[run_id] and placed in indata/ directory.**
 
-Run PROTAX-fungi using SIF (example data with run_id=11)
+5. Run PROTAX-fungi using SIF (example data with run_id=11)
 	```console
 	./protax_fungi.sif /run_protax_plutof.sh 11 itsfull 90
 	```
