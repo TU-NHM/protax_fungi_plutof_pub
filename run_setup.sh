@@ -1,16 +1,19 @@
 #!/bin/bash
 
-# create input and output data directories for PROTAX-fungi
+# create input and output data directories for PROTAX-fungi (unless exist)
 echo "Creating input and output directories for PROTAX-fungi ..."
-mkdir indata
-mkdir userdir
-mkdir outdata
+mkdir -p indata
+mkdir -p userdir
+mkdir -p outdata
 
 # Download protax_fungi.sif
 echo "Downloading PROTAX-fungi singularity container from https://plutof.ut.ee/#/filerepository/view/3576198 ..."
 wget https://files.plutof.ut.ee/public/orig/D2/5E/D25EE5C0C740F63887125FD05F1B3E91C9573B67CDD5C226EC7E4CF6AF70B52A
-mv D25EE5C0C740F63887125FD05F1B3E91C9573B67CDD5C226EC7E4CF6AF70B52A protax_fungi.sif
-chmod 755 protax_fungi.sif
+mv D25EE5C0C740F63887125FD05F1B3E91C9573B67CDD5C226EC7E4CF6AF70B52A protax.sif
+chmod 755 protax.sif
+
+echo "Removing old db files ..."
+rm -fr db_files/
 
 echo "Downloading PROTAX-fungi supporting files from https://plutof.ut.ee/#/filerepository/view/3576293 ..."
 wget https://files.plutof.ut.ee/public/orig/A9/11/A911815A6691B3F74EACA42A20605CEB680424F01553E65D1EF3A6767BBCA22B.zip

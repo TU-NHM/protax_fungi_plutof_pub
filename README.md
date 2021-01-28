@@ -6,18 +6,18 @@ EOSC-Nordic service preparations (PROTAX-fungi)
 ### Pre-requisites
 
 * OPTIONAL: [Singularity](https://sylabs.io/singularity/) - install Singularity (needed to create new singularity container)
-* OPTIONAL: [VSEARCH](https://github.com/torognes/vsearch) - download VSEARCH binary, place it in the folder protaxfungi/thirdparty/ named as vsearch (needed to update supporting files)
+* OPTIONAL: [VSEARCH](https://github.com/torognes/vsearch) - download VSEARCH binary (needed to update supporting files)
 
 ### Setup steps
 
 1. OPTIONAL: Create Singularity Image File (SIF)
 	```console
-	sudo singularity build protax_fungi.sif protax_fungi_plutof.def
+	sudo singularity build protax.sif protax_fungi_plutof.def
 	```
 
 2. OPTIONAL: Copy SIF to HPC
 	```console
-	scp protax_fungi.sif example_hpc_user@example.com:
+	scp protax.sif example_hpc_user@example.com:
 	```
 
 3. Run setup bash script (downloads singularity container and supporting data files, creates input and output data directories)
@@ -47,5 +47,5 @@ EOSC-Nordic service preparations (PROTAX-fungi)
 
 5. Run PROTAX-fungi using SIF (example data with run_id=11)
 	```console
-	./protax_fungi.sif /run_protax_plutof.sh 11 itsfull 90
+	./protax.sif /run_protax_plutof.sh 11 itsfull 90
 	```
