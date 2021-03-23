@@ -1,5 +1,5 @@
 # protax_fungi_plutof
-EOSC-Nordic service preparations (PROTAX-fungi).
+EOSC-Nordic service preparations (PROTAX-fungi)
 
 PROTAX-fungi - stand alone tool for probabilistic taxonomic placement of fungal ITS sequences ([https://github.com/psomervuo/protaxfungi](https://github.com/psomervuo/protaxfungi)).
 
