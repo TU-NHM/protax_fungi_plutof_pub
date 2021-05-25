@@ -7,9 +7,9 @@ mkdir -p userdir
 mkdir -p outdata
 
 # Download protax_fungi.sif
-echo "Downloading PROTAX-fungi singularity container from https://plutof.ut.ee/#/filerepository/view/3576198 ..."
-wget https://files.plutof.ut.ee/public/orig/D2/5E/D25EE5C0C740F63887125FD05F1B3E91C9573B67CDD5C226EC7E4CF6AF70B52A
-mv D25EE5C0C740F63887125FD05F1B3E91C9573B67CDD5C226EC7E4CF6AF70B52A protax.sif
+echo "Downloading PROTAX-fungi singularity container from https://plutof.ut.ee/#/filerepository/view/4357089 ..."
+wget https://files.plutof.ut.ee/public/orig/C1/FF/C1FF323AD11189B32D423506EC4E55403BF2DC84AEBF0703E7E78DBE7024C891
+mv C1FF323AD11189B32D423506EC4E55403BF2DC84AEBF0703E7E78DBE7024C891 protax.sif
 chmod 755 protax.sif
 
 echo "Removing old db files ..."
