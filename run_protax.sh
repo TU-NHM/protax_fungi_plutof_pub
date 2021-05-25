@@ -78,5 +78,5 @@ cp $PROTAXDIR/README.txt "$ODIR"
 
 #zip "$INFILE.zip" README.txt krona.html krona.xml query2.logprob query3.logprob query4.logprob query5.logprob query6.logprob query7.logprob query.fa query.lensize query.sasintax query2.nameprob query3.nameprob query4.nameprob query5.nameprob query6.nameprob query7.nameprob query.ids query.m8 query.sintax
 pushd "$PWD/userdir/"
-zip "../outdata/$INFILE.zip" "$ODIR"/*
+zip "../outdata/$INFILE.zip" "$RUNID"/*
 popd
